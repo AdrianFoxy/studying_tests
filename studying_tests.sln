@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "polymorphism", "polymorphis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encapsulation", "encapsulation\encapsulation.csproj", "{7B0A7916-4AB4-496F-87BD-BE41978DA606}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "keyword_static", "keyword_static\keyword_static.csproj", "{31BA072A-84DE-4E22-A119-06E8184AB689}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7B0A7916-4AB4-496F-87BD-BE41978DA606}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B0A7916-4AB4-496F-87BD-BE41978DA606}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B0A7916-4AB4-496F-87BD-BE41978DA606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BA072A-84DE-4E22-A119-06E8184AB689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BA072A-84DE-4E22-A119-06E8184AB689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BA072A-84DE-4E22-A119-06E8184AB689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BA072A-84DE-4E22-A119-06E8184AB689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
