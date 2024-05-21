@@ -23,11 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "const_vs_readonly", "const_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interfaces", "interfaces\interfaces.csproj", "{2DF16214-AB04-423C-87B7-777B7EA35854}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interfaces_multiple_inheritance", "interfaces_part2\interfaces_multiple_inheritance.csproj", "{76D1A38E-3B0C-45FE-9E13-80BCE78DA9DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interfaces_multiple_inheritance", "interfaces_part2\interfaces_multiple_inheritance.csproj", "{76D1A38E-3B0C-45FE-9E13-80BCE78DA9DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface_explicit_implementation", "interface_explicit_implementation\interface_explicit_implementation.csproj", "{5F84B942-309B-4318-BE79-DD4315000777}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interface_explicit_implementation", "interface_explicit_implementation\interface_explicit_implementation.csproj", "{5F84B942-309B-4318-BE79-DD4315000777}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface_default_implementation", "interface_default_implementation\interface_default_implementation.csproj", "{948431B5-6DC7-4A46-96D0-35717001742D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interface_default_implementation", "interface_default_implementation\interface_default_implementation.csproj", "{948431B5-6DC7-4A46-96D0-35717001742D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reference_and_value_types", "reference_and_value_types\reference_and_value_types.csproj", "{5F9FE210-063F-413F-88F1-C0C48783226B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{948431B5-6DC7-4A46-96D0-35717001742D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{948431B5-6DC7-4A46-96D0-35717001742D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{948431B5-6DC7-4A46-96D0-35717001742D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9FE210-063F-413F-88F1-C0C48783226B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9FE210-063F-413F-88F1-C0C48783226B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9FE210-063F-413F-88F1-C0C48783226B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9FE210-063F-413F-88F1-C0C48783226B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
