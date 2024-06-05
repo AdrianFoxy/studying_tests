@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interface_explicit_implemen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interface_default_implementation", "interface_default_implementation\interface_default_implementation.csproj", "{948431B5-6DC7-4A46-96D0-35717001742D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reference_and_value_types", "reference_and_value_types\reference_and_value_types.csproj", "{5F9FE210-063F-413F-88F1-C0C48783226B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reference_and_value_types", "reference_and_value_types\reference_and_value_types.csproj", "{5F9FE210-063F-413F-88F1-C0C48783226B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ref_keyword", "ref_keyword\ref_keyword.csproj", "{E82BCFFE-7529-468C-9448-5355C744433D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{5F9FE210-063F-413F-88F1-C0C48783226B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F9FE210-063F-413F-88F1-C0C48783226B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F9FE210-063F-413F-88F1-C0C48783226B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82BCFFE-7529-468C-9448-5355C744433D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82BCFFE-7529-468C-9448-5355C744433D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82BCFFE-7529-468C-9448-5355C744433D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82BCFFE-7529-468C-9448-5355C744433D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
