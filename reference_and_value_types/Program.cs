@@ -2,97 +2,109 @@
 {
     class Program
     {
-        // stack и heap это области оперативной памяти, но используются они по разному. 
-        // так же различия в целях использования и в обьемах использования оперативной памяти
-        // stack - маленький обьекм оперативки для heap - большой
-
-        // stack - обьем оперативки что выделяется для каждого потока.
-        // stack - используется для хранения переменных,
-        // выполнения операций над ними
-        // а так же для вызова методов
-        // дефолт значение ограничивается 1МБ
-        // тут можно быстро размещать данные и быстро их освобождать
-        // принцип стека - last in first out
-
-        // heap - куда более стека
-        // много но медленно
-
-
-        // value types живет в стеке
-        // reference types - в куче
-
-        // value type is strcut, enum. For example int - is struct, int - value type
-        // reference type - class. Random - reference type
-
-        // value types прекращаю свое существование когда покидают контекст в котором они были определены
-        // reference types когда обьек подвергается сборке мусора
-
-        // поведение при передеаче параметров и копировании:
-        // value types - переменные передаются по значению (копируются реальные данные)
-        // reference types - копируется ссылка, огигинал и копия ссылаются на один и тот же обьект в куче, одни и те же данные
-
         static void Foo(int a)
         {
-            a = 5;
+            a = 10;
         }
 
-        static void Bar(int[] arr)
+        static void Bar(Vegetable vagetable) 
         {
-            arr[0] = 5;
+            vagetable.Name = "Potato";
+        }
+
+        class Vegetable
+        {
+            public Vegetable(string Name, string Home_Farm)
+            {
+                this.Name = Name;
+                this.Home_Farm = Home_Farm;
+            }
+
+            public string Name { get; set; }
+            public string Home_Farm { get; set; }
+        }
+
+        public class MyClass
+        {
+            public int Value { get; set; }
+
+            public MyClass(int value)
+            {
+                Value = value;
+            }
+        }
+
+        // Here is new reference doesn't work
+        public static void ModifyObject(MyClass myObject)
+        {
+            // Change Value
+            myObject.Value = 20;
+            // Make new reference
+            myObject = new MyClass(30);
+        }
+
+        // Here is new reference works, because we are using keyword ref
+        public static void ModifyObjectRef(ref MyClass myObject)
+        {
+            // Change Value
+            myObject.Value = 20;
+            // Make new reference
+            myObject = new MyClass(30);
+        }
+
+        static void Foo2(ref int a)
+        {
+            a = 10;
         }
 
         static void Main(string[] args)
         {
-            // value type
             int a = 5;
-            double test = 5;
+            Foo(a);
+            Console.WriteLine(a); // 5
+                                  // Because int is a value type, in methods we create a copy of a
+                                  // and this copy will be alive only using the method.
+                                  // Then it dies, but with original a = 5 nothing happens
 
-            // value type
-            System.Int32 b = 5;
+            Vegetable vag = new Vegetable("Cucumber", "Funny Bob Farm");
+            Bar(vag);
+            Console.WriteLine(vag.Name); // Potato
+                                         // Cucumber will be replaced with Potato, because class is value type
+                                         // Because in the methods Bar creates not copy, but reference to the value of this object
+                                         // So if it will be changed somewhere, it will be changed everywhere
 
-            // reference type
-            Random random = new Random();
+            Foo2(ref a);
+            Console.WriteLine(a); // 10
+                                  // int is a value type, but with ref keyword in will be reference
+                                  // so in the method, instead  of creating copy, we just use reference to this value
 
-            // It writes that is struct, but all arrays is from class Array. So - reference
-            int[] arr = new int[10];
+
+            MyClass obj = new MyClass(10);
+            Console.WriteLine("Before modification: " + obj.Value); // Output: 10
+
+            // Sebd object without ref
+            ModifyObject(obj);
+            Console.WriteLine("After ModifyObject: " + obj.Value); // Output: 20
+
+            // Send object with ref
+            // Here creates new reference to reference
+            ModifyObjectRef(ref obj);
+            Console.WriteLine("After ModifyObjectRef: " + obj.Value); // Output: 30
 
 
-            // VALUE TYPES -  int g exists only, until we are in this { }
-            {
-                int g = 2;
-            }
+            // boxing and unboxing
+            // object is basic class for all data types in C#
 
-            // REFERENCE TYPE - в h попадает адресс на массив, т.е h это просто ссылка на мой массив
-            // если выйти за скобки - удалится ссылка на массив, но память выделенная на массив осталась
-            // и она останется пока не сработает сборщик мусора
-            {
-                int [] h = new int[10];
-            }
+            // we make space in the heap and copy b value there
+            // and then get reference to this date in the c 
+            // boxing
+            int b = 1;
+            object c = b;
+            // unboxing
+            int e = (int)c;
 
-            // копирование
-            int s = 10; // stack
-            int k;
-            k = s; // stack
-            // here we have two differes variables s and k in stack, with their values
-
-            int[] arr2 = new int[10];
-            // в стек попадается ссылка на массив arr2(ref) а в кучу arr2(data) данные
-            // как пример - arr2 - ярлык на рабочем столе, а данные храняться где-то еще на диске
-
-            int[] arrb = new int[10];
-            int[] arrg;
-            arrg = arrb;
-            // в stack попадают ссылки на оба массива arrb(ref) arrg(ref),
-            // в heap только данные изначальные a(data) и оба массива ссылкаются на них
-
-            int fa = 1;
-            Foo(fa);
-            Console.WriteLine(fa); // 1; because value type
-
-            int[] farr = new int[1];
-            farr[0] = 1;
-            Bar(farr);
-            Console.WriteLine(farr[0]); // 5; because reference type
+            // unboxing like this will not work, because we were boxing int and can't unbox it to another datatype
+            // decimal d = (decimal)c; // InvalidCastException
         }
     }
 }
