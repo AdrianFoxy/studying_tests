@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reference_and_value_types",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "generics", "generics\generics.csproj", "{397CF6B4-CA76-4CC0-BF3B-F60AC2E3498E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arrays", "arrays\arrays.csproj", "{CFA56B92-AB2F-4E62-A172-21C32B793F8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{397CF6B4-CA76-4CC0-BF3B-F60AC2E3498E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{397CF6B4-CA76-4CC0-BF3B-F60AC2E3498E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{397CF6B4-CA76-4CC0-BF3B-F60AC2E3498E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA56B92-AB2F-4E62-A172-21C32B793F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA56B92-AB2F-4E62-A172-21C32B793F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA56B92-AB2F-4E62-A172-21C32B793F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA56B92-AB2F-4E62-A172-21C32B793F8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
