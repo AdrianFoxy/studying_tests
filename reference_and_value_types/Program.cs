@@ -57,9 +57,30 @@
             a = 10;
         }
 
+        static void BarOut(out int value)
+        {
+            value = 9;
+            Console.WriteLine(value);
+        }
+
+        static void FooIn(in int value)
+        {
+            // in means that value will be readonly
+            // value = 5; // Here is error
+            Console.WriteLine(value);
+        }
+
         static void Main(string[] args)
         {
             int a = 5;
+            BarOut(out a);
+            BarOut(out int a12);
+            Console.WriteLine(a);
+
+            string str = "test";
+            int.TryParse(str, out int result);
+            Console.WriteLine(result);
+
             Foo(a);
             Console.WriteLine(a); // 5
                                   // Because int is a value type, in methods we create a copy of a
