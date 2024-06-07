@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "interface_default_implement
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reference_and_value_types", "reference_and_value_types\reference_and_value_types.csproj", "{5F9FE210-063F-413F-88F1-C0C48783226B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "generics", "generics\generics.csproj", "{397CF6B4-CA76-4CC0-BF3B-F60AC2E3498E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "generics", "generics\generics.csproj", "{397CF6B4-CA76-4CC0-BF3B-F60AC2E3498E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arrays", "arrays\arrays.csproj", "{CFA56B92-AB2F-4E62-A172-21C32B793F8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "arrays", "arrays\arrays.csproj", "{CFA56B92-AB2F-4E62-A172-21C32B793F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data_structures_and_collections", "data_structures_and_collections\data_structures_and_collections.csproj", "{ACE4F9CB-DBD2-480E-A00C-192D30EF0331}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{CFA56B92-AB2F-4E62-A172-21C32B793F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFA56B92-AB2F-4E62-A172-21C32B793F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFA56B92-AB2F-4E62-A172-21C32B793F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE4F9CB-DBD2-480E-A00C-192D30EF0331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE4F9CB-DBD2-480E-A00C-192D30EF0331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE4F9CB-DBD2-480E-A00C-192D30EF0331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE4F9CB-DBD2-480E-A00C-192D30EF0331}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
