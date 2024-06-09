@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stringBuilder", "stringBuilder\stringBuilder.csproj", "{D797BE79-2D5A-47EA-B5D7-E203F6BCC4DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dispose_finalize", "dispose_finalize\dispose_finalize.csproj", "{FD4275B1-1F24-4D89-9921-C10C0D5F9E36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "what_is_LINQ", "what_is_LINQ\what_is_LINQ.csproj", "{F9CDAB03-72D9-44FE-B4DF-85C1A7C1C127}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{D797BE79-2D5A-47EA-B5D7-E203F6BCC4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D797BE79-2D5A-47EA-B5D7-E203F6BCC4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D797BE79-2D5A-47EA-B5D7-E203F6BCC4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4275B1-1F24-4D89-9921-C10C0D5F9E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4275B1-1F24-4D89-9921-C10C0D5F9E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4275B1-1F24-4D89-9921-C10C0D5F9E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4275B1-1F24-4D89-9921-C10C0D5F9E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CDAB03-72D9-44FE-B4DF-85C1A7C1C127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CDAB03-72D9-44FE-B4DF-85C1A7C1C127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CDAB03-72D9-44FE-B4DF-85C1A7C1C127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CDAB03-72D9-44FE-B4DF-85C1A7C1C127}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
